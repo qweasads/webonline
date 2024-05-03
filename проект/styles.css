@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Цвет фона для всей страницы */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Чтобы изображение было по центру горизонтально */
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: #333; /* Цвет фона для заголовка */
+    color: white; /* Цвет текста для заголовка */
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Для выравнивания ссылок по центру горизонтально */
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-image img {
+    max-width: 100%;
+}
+
+#courses, #lessons {
+    width: 100%;
+    max-width: 800px; /* Чтобы контент не был слишком широким */
+    padding: 20px;
+}
+
+#courses ul, #lessons ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses h2, #lessons h2 {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.toggle-theme-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-image: url('sun-moon-icon.png'); /* Замени путь на реальный путь к изображению */
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+/* Для темной темы */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
